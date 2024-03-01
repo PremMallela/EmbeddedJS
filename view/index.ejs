@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded JS in HTML</title>
+</head>
+<body>
+    <form action="/submit" method="POST" enctype="application/x-www-form-urlencoded">
+        <label>Day of the week </label><input type="text" name="dayOfTheWeek">
+        <input type="submit" value="Submit">
+    </form>
+    <%if(locals.name){  //this validation ensures that no actual html code breaks%>
+        <h1><%=name%></h1>
+    <%}%>
+    
+</body>
+</html>
